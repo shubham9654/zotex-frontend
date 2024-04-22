@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 const Header = () => {
@@ -12,25 +13,25 @@ const Header = () => {
                   <ul>
                     <li>
                       <div className="tp-header-top-right-social">
-                        <a href="#">
+                        <Link to="#">
                           <i className="fa-brands fa-facebook-f" />
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="#">
                           <i className="fa-brands fa-instagram" />
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="#">
                           <i className="fa-brands fa-linkedin-in" />
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="#">
                           <i className="fa-brands fa-twitter" />
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li className="d-none d-md-inline-block">
                       <i className="flaticon-mail-1" />
-                      <a href="mailto:sales@zotex.in">
+                      <Link to="mailto:sales@zotex.in">
                         <span className="__cf_email__">sales@zotex.in</span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -40,7 +41,7 @@ const Header = () => {
                   <ul>
                     <li>
                       <i className="fa fa-phone" style={{ color: "#f36e21" }} />
-                      <a href="tel:+919887798866">+91 988-779-8866</a>
+                      <Link to="tel:+919887798866">+91 988-779-8866</Link>
                     </li>
                   </ul>
                 </div>
@@ -53,9 +54,9 @@ const Header = () => {
             <div className="row align-items-center">
               <div className="col-xl-3 col-lg-4 col-md-4 col-6">
                 <div className="tp-header-logo">
-                  <a href="index.html">
+                  <Link to="/">
                     <img src="assets/img/logo/white-logo.png" alt="" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-xl-8 d-none d-xl-block">
@@ -63,60 +64,60 @@ const Header = () => {
                   <nav className="tp-main-menu-content">
                     <ul>
                       <li>
-                        <a href="index.html">Home</a>
+                        <Link to="/">Home</Link>
                       </li>
                       <li>
-                        <a href="about-us.html">about us</a>
+                        <Link to="/about">about us</Link>
                       </li>
                       <li className="has-dropdown">
-                        <a href="product.html">Products</a>
+                        <Link to="product.html">Products</Link>
                         <ul className="submenu tp-submenu">
                           <li>
-                            <a href="CCTV-camera.html">CCTV Camera</a>
+                            <Link to="CCTV-camera.html">CCTV Camera</Link>
                           </li>
                           <li>
-                            <a href="CCTV-cables.html">CCTV Cables</a>
+                            <Link to="CCTV-cables.html">CCTV Cables</Link>
                           </li>
                           <li>
-                            <a href="CCTV-rack.html">CCTV Rack</a>
+                            <Link to="CCTV-rack.html">CCTV Rack</Link>
                           </li>
                           <li>
-                            <a href="CCTV-accessories.html">CCTV Accessories</a>
+                            <Link to="CCTV-accessories.html">CCTV Accessories</Link>
                           </li>
                           <li>
-                            <a href="cat-6-cables.html">Cat-6 Cables</a>
+                            <Link to="cat-6-cables.html">Cat-6 Cables</Link>
                           </li>
                           <li>
-                            <a href="surge-protector.html">Surge Protector</a>
+                            <Link to="surge-protector.html">Surge Protector</Link>
                           </li>
                           <li>
-                            <a href="HDMI-cables.html">HDMI Cables</a>
+                            <Link to="HDMI-cables.html">HDMI Cables</Link>
                           </li>
                           <li>
-                            <a href="power-cables.html">Power Cables</a>
+                            <Link to="power-cables.html">Power Cables</Link>
                           </li>
                           <li>
-                            <a href="usb-extension-cables.html">
+                            <Link to="usb-extension-cables.html">
                               USB Extension Cables
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="usb-printer-cables.html">
+                            <Link to="usb-printer-cables.html">
                               USB Printer Cables
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="extenders-and-splitters.html">
+                            <Link to="extenders-and-splitters.html">
                               Extenders and Splitters
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="other-accessories.html">Other Accessories</a>
+                            <Link to="other-accessories.html">Other Accessories</Link>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="contact-us.html">Contact</a>
+                        <Link to="/contact">Contact</Link>
                       </li>
                     </ul>
                   </nav>

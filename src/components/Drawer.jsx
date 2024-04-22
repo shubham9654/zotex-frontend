@@ -30,7 +30,7 @@ const Drawer = () => {
             </button>
           </div>
           <div className="tpoffcanvas__logo">
-            <a href="index.html">
+            <a href="/">
               <img src="assets/img/logo/white-logo.png" alt="" />
             </a>
           </div>

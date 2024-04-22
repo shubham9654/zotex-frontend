@@ -17,7 +17,7 @@ const Footer = () => {
             >
               <div className="tp-footer-widget footer-cols-1">
                 <div className="tp-footer-logo">
-                  <a href="index.html">
+                  <a href="/">
                     <img src="assets/img/logo/white-logo.png" alt="" />
                   </a>
                 </div>
@@ -41,7 +41,7 @@ const Footer = () => {
                 <div className="tp-footer-list">
                   <ul>
                     <li>
-                      <a href="index.html">
+                      <a href="/">
                         <i className="fa-sharp fa-solid fa-plus" />
                         Home
                       </a>
@@ -53,7 +53,7 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="contact-us.html">
+                      <a href="/contact">
                         <i className="fa-sharp fa-solid fa-plus" />
                         Contact Us
                       </a>
