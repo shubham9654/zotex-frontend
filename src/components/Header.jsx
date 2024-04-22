@@ -13,25 +13,25 @@ const Header = () => {
                   <ul>
                     <li>
                       <div className="tp-header-top-right-social">
-                        <Link to="#">
+                        <a href="#">
                           <i className="fa-brands fa-facebook-f" />
-                        </Link>
-                        <Link to="#">
+                        </a>
+                        <a href="#">
                           <i className="fa-brands fa-instagram" />
-                        </Link>
-                        <Link to="#">
+                        </a>
+                        <a href="#">
                           <i className="fa-brands fa-linkedin-in" />
-                        </Link>
-                        <Link to="#">
+                        </a>
+                        <a href="#">
                           <i className="fa-brands fa-twitter" />
-                        </Link>
+                        </a>
                       </div>
                     </li>
                     <li className="d-none d-md-inline-block">
                       <i className="flaticon-mail-1" />
-                      <Link to="mailto:sales@zotex.in">
+                      <a href="mailto:sales@zotex.in">
                         <span className="__cf_email__">sales@zotex.in</span>
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -41,7 +41,7 @@ const Header = () => {
                   <ul>
                     <li>
                       <i className="fa fa-phone" style={{ color: "#f36e21" }} />
-                      <Link to="tel:+919887798866">+91 988-779-8866</Link>
+                      <a href="tel:+919887798866">+91 988-779-8866</a>
                     </li>
                   </ul>
                 </div>
@@ -54,9 +54,9 @@ const Header = () => {
             <div className="row align-items-center">
               <div className="col-xl-3 col-lg-4 col-md-4 col-6">
                 <div className="tp-header-logo">
-                  <Link to="/">
+                  <a href="/">
                     <img src="assets/img/logo/white-logo.png" alt="" />
-                  </Link>
+                  </a>
                 </div>
               </div>
               <div className="col-xl-8 d-none d-xl-block">
@@ -64,60 +64,60 @@ const Header = () => {
                   <nav className="tp-main-menu-content">
                     <ul>
                       <li>
-                        <Link to="/">Home</Link>
+                        <a href="/">Home</a>
                       </li>
                       <li>
-                        <Link to="/about">about us</Link>
+                        <a href="/about">about us</a>
                       </li>
                       <li className="has-dropdown">
-                        <Link to="product.html">Products</Link>
+                        <a href="product.html">Products</a>
                         <ul className="submenu tp-submenu">
                           <li>
-                            <Link to="CCTV-camera.html">CCTV Camera</Link>
+                            <a href="CCTV-camera.html">CCTV Camera</a>
                           </li>
                           <li>
-                            <Link to="CCTV-cables.html">CCTV Cables</Link>
+                            <a href="CCTV-cables.html">CCTV Cables</a>
                           </li>
                           <li>
-                            <Link to="CCTV-rack.html">CCTV Rack</Link>
+                            <a href="CCTV-rack.html">CCTV Rack</a>
                           </li>
                           <li>
-                            <Link to="CCTV-accessories.html">CCTV Accessories</Link>
+                            <a href="CCTV-accessories.html">CCTV Accessories</a>
                           </li>
                           <li>
-                            <Link to="cat-6-cables.html">Cat-6 Cables</Link>
+                            <a href="cat-6-cables.html">Cat-6 Cables</a>
                           </li>
                           <li>
-                            <Link to="surge-protector.html">Surge Protector</Link>
+                            <a href="surge-protector.html">Surge Protector</a>
                           </li>
                           <li>
-                            <Link to="HDMI-cables.html">HDMI Cables</Link>
+                            <a href="HDMI-cables.html">HDMI Cables</a>
                           </li>
                           <li>
-                            <Link to="power-cables.html">Power Cables</Link>
+                            <a href="power-cables.html">Power Cables</a>
                           </li>
                           <li>
-                            <Link to="usb-extension-cables.html">
+                            <a href="usb-extension-cables.html">
                               USB Extension Cables
-                            </Link>
+                            </a>
                           </li>
                           <li>
-                            <Link to="usb-printer-cables.html">
+                            <a href="usb-printer-cables.html">
                               USB Printer Cables
-                            </Link>
+                            </a>
                           </li>
                           <li>
-                            <Link to="extenders-and-splitters.html">
+                            <a href="extenders-and-splitters.html">
                               Extenders and Splitters
-                            </Link>
+                            </a>
                           </li>
                           <li>
-                            <Link to="other-accessories.html">Other Accessories</Link>
+                            <a href="other-accessories.html">Other Accessories</a>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <Link to="/contact">Contact</Link>
+                        <a href="/contact">Contact</a>
                       </li>
                     </ul>
                   </nav>

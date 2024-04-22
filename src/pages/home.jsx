@@ -1,25 +1,8 @@
-import { Helmet } from "react-helmet"
+
 
 const Home = () => {
   return (
     <>
-      <Helmet>
-        <script src="/public/assets/js/vendor/jquery.js"></script>
-        <script src="/public/assets/js/vendor/waypoints.js"></script>
-        <script src="/public/assets/js/bootstrap-bundle.js"></script>
-        <script src="/public/assets/js/swiper-bundle.js"></script>
-        <script src="/public/assets/js/slick.js"></script>
-        <script src="/public/assets/js/range-slider.js"></script>
-        <script src="/public/assets/js/magnific-popup.js"></script>
-        <script src="/public/assets/js/nice-select.js"></script>
-        <script src="/public/assets/js/purecounter.js"></script>
-        <script src="/public/assets/js/wow.js"></script>
-        <script src="/public/assets/js/isotope-pkgd.js"></script>
-        <script src="/public/assets/js/jarallax.js"></script>
-        <script src="/public/assets/js/imagesloaded-pkgd.js"></script>
-        <script src="/public/assets/js/ajax-form.js"></script>
-        <script src="/public/assets/js/main.js"></script>
-      </Helmet>
       <main>
         <div className="tp-slider-3-area black-bg p-relative">
           <div className="tp-scroll-bottom smooth d-none d-md-block">
