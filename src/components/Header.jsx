@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom"
-
-
 const Header = () => {
   return (
     <header>
@@ -70,7 +67,7 @@ const Header = () => {
                         <a href="/about">about us</a>
                       </li>
                       <li className="has-dropdown">
-                        <a href="product.html">Products</a>
+                        <a href="/product">Products</a>
                         <ul className="submenu tp-submenu">
                           <li>
                             <a href="CCTV-camera.html">CCTV Camera</a>

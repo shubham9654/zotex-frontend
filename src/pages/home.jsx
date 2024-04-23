@@ -302,7 +302,7 @@ const Home = () => {
                     </div>
                     <div className="tp-service-3-text pb-30">
                       <h4 className="tp-service-3-title pb-15">
-                        <a href="product.html">Laptop Casing</a>
+                        <a href="/product">Laptop Casing</a>
                       </h4>
                       <ul>
                         <li>Screw Less Device</li>
@@ -395,7 +395,7 @@ const Home = () => {
                     </div>
                     <div className="tp-service-3-text pb-30">
                       <h4 className="tp-service-3-title pb-15">
-                        <a href="product.html">Wall Mount</a>
+                        <a href="/product">Wall Mount</a>
                       </h4>
                       <ul>
                         <li>Heavy Duty Powder</li>
@@ -519,7 +519,7 @@ const Home = () => {
                     </div>
                     <div className="tp-service-3-text pb-30">
                       <h4 className="tp-service-3-title pb-15">
-                        <a href="product.html">Air Blower</a>
+                        <a href="/product">Air Blower</a>
                       </h4>
                       <ul>
                         <li>450w Motor</li>
@@ -530,7 +530,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-md-2">
-                <a href="product.html" className="tp-btn hover-2">
+                <a href="/product" className="tp-btn hover-2">
                   View More
                 </a>
               </div>
@@ -652,7 +652,7 @@ const Home = () => {
                     </div>
                     <div className="tp-step-text">
                       <h5 className="tp-step-title">
-                        <a href="product.html">Poe Box</a>
+                        <a href="/product">Poe Box</a>
                       </h5>
                       <p>
                         Waterproof Box, ABS Plastic, in-build 3 Socket PDU, Pole or
@@ -660,7 +660,7 @@ const Home = () => {
                       </p>
                     </div>
                     <div className="tp-step-number">
-                      <a href="product.html">
+                      <a href="/product">
                         <span>Details</span>
                       </a>
                     </div>
