@@ -7,6 +7,7 @@ import Layout from './routes/layout';
 import Contact from "./pages/contact";
 import Product from "./pages/product";
 import ProductDetail from "./pages/productDetail";
+import Dashboard from "./pages/dashboard";
 import Login from "./pages/dashboard/login";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route>
+            <Route index path="/dashboard" element={<Dashboard />} />
             <Route path="/dashboard/login" element={<Login />} />
           </Route>
           <Route path="/" element={<Layout />}>
