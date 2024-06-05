@@ -55,7 +55,7 @@ const Product = () => {
                 <div className="col-xl-4 col-md-6 col-sm-6 infinite-item">
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
-                      <a href="//product-details">
+                      <a href="/product-details">
                         <img src="assets/img/products/product-img-01.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
