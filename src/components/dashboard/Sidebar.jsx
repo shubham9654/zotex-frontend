@@ -41,7 +41,7 @@ export const Sidebar = () => {
             <li key={`sidebar_${index}`} className="flex flex-col">
               <div
                 className={`py-2.5 mb-2.5 flex items-center justify-between cursor-pointer rounded-[10px] transition-colors duration-300
-                  ${active.route === data.route ? 'bg-black text-white px-[11px]' : 'text-[#808080] hover:bg-black px-3'}
+                  ${active.route === data.route ? 'bg-black text-white px-[11px]' : 'text-[#000] hover:!text-white hover:bg-black px-3'}
                 `}
                 onClick={() => handleRoute({
                   route: data.route,
@@ -66,7 +66,7 @@ export const Sidebar = () => {
                           ? 'fill-white rotate-180'
                           : active.route === data.route
                             ? 'fill-white'
-                            : 'fill-[#808080]'
+                            : 'fill-[#000]'
                         }
 											`}
                       xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ export const Sidebar = () => {
                             <li
                               key={`sidebar_nested_route_${index}`}
                               className={`mb-2.5 cursor-pointer duration-300
-                              ${active.nestedRoute === nestedData.route ? 'text-[#5367FC]' : 'text-[#808080] hover:text-[#5367FC]'}
+                              ${active.nestedRoute === nestedData.route ? 'text-[#5367FC]' : 'text-[#000] hover:text-[#5367FC]'}
                             `}
                               onClick={() => handleRoute({
                                 route: data.route,

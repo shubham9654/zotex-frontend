@@ -911,7 +911,7 @@ div.demo img {
   width: 26px;
   height: 26px;
   line-height: 26px;
-  color: #D9D9D9;
+  color: #fff;
 }
 .tp-theme-toggle-light.active, .tp-theme-toggle-dark.active {
   color: var(--tp-common-black);
