@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <main>
-        <div className="breadcrumb__area breadcrumb__overlay breadcrumb__height p-relative fix" data-background="assets/img/breadcurmb/breadcurmb.jpg">
+        <div className="breadcrumb__area breadcrumb__overlay breadcrumb__height p-relative fix" data-background="img/breadcurmb/breadcurmb.jpg">
           <div className="container">
             <div className="row">
               <div className="col-xxl-12">
@@ -28,21 +28,21 @@ const About = () => {
             <div className="row">
               <div className="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".5s">
                 <div className="tp-about-right-box tp-about-right-wrap text-end p-relative">
-                  <div className="tp-about-2-thumb-text text-start d-none d-lg-block" data-background="assets/img/about/bg-2.jpg">
+                  <div className="tp-about-2-thumb-text text-start d-none d-lg-block" data-background="img/about/bg-2.jpg">
                     <h6><i className="purecounter" data-purecounter-duration={1} data-purecounter-end={35}>0</i>+</h6>
                     <span>Years of experience</span>
                   </div>
                   <div className="tp-about-main-thumb">
-                    <img src="assets/img/about/thumb-3-2.jpg" alt="" />
+                    <img src="img/about/thumb-3-2.jpg" alt="" />
                   </div>
                   <div className="tp-about-thumb-sm">
-                    <img src="assets/img/about/thumb-3-1.jpg" alt="" />
+                    <img src="img/about/thumb-3-1.jpg" alt="" />
                   </div>
                   <div className="tp-about-shape-2  d-none d-lg-block">
-                    <img src="assets/img/about/shape-1-3.png" alt="" />
+                    <img src="img/about/shape-1-3.png" alt="" />
                   </div>
                   <div className="tp-about-shape-6 d-none d-xl-block">
-                    <img src="assets/img/about/shape-3-2.png" alt="" />
+                    <img src="img/about/shape-3-2.png" alt="" />
                   </div>
                 </div>
               </div>

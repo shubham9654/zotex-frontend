@@ -18,7 +18,6 @@ function App() {
         <Routes>
           <Route path="/dashboard" element={<DashboardLayout />}>
             <Route index element={<Dashboard />} />
-
             {/* <Route path="/dashboard/login" element={<Login />} /> */}
           </Route>
           <Route path="/" element={<Layout />}>

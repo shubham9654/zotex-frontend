@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <>
       <main>
-        <div className="breadcrumb__area breadcrumb__overlay breadcrumb__height p-relative fix" data-background="assets/img/breadcurmb/breadcurmb.jpg">
+        <div className="breadcrumb__area breadcrumb__overlay breadcrumb__height p-relative fix" data-background="img/breadcurmb/breadcurmb.jpg">
           <div className="container">
             <div className="row">
               <div className="col-xxl-12">
@@ -29,7 +29,7 @@ const Contact = () => {
               <div className="col-xl-4 col-lg-4 col-md-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
                 <div className="tp-contact-3-item text-center">
                   <div className="tp-contact-3-icon">
-                    <span><img className="z-index" src="assets/img/contact/icon-1.png" alt="" /></span>
+                    <span><img className="z-index" src="img/contact/icon-1.png" alt="" /></span>
                   </div>
                   <div className="tp-contact-3-text">
                     <h5 className="tp-contact-3-title">Visit our place</h5>
@@ -40,7 +40,7 @@ const Contact = () => {
               <div className="col-xl-4 col-lg-4 col-md-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
                 <div className="tp-contact-3-item text-center">
                   <div className="tp-contact-3-icon">
-                    <span><img className="z-index" src="assets/img/contact/icon-2.png" alt="" /></span>
+                    <span><img className="z-index" src="img/contact/icon-2.png" alt="" /></span>
                   </div>
                   <div className="tp-contact-3-text">
                     <h5 className="tp-contact-3-title">Contact us</h5>
@@ -52,7 +52,7 @@ const Contact = () => {
               <div className="col-xl-4 col-lg-4 col-md-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
                 <div className="tp-contact-3-item text-center">
                   <div className="tp-contact-3-icon">
-                    <span><img className="z-index" src="assets/img/contact/icon-3.png" alt="" /></span>
+                    <span><img className="z-index" src="img/contact/icon-3.png" alt="" /></span>
                   </div>
                   <div className="tp-contact-3-text">
                     <h5 className="tp-contact-3-title">Office time</h5>

@@ -3,7 +3,7 @@
 const Product = () => {
   return (
     <main>
-      <div className="breadcrumb__area breadcrumb__overlay breadcrumb__height p-relative fix" data-background="assets/img/breadcurmb/breadcurmb.jpg">
+      <div className="breadcrumb__area breadcrumb__overlay breadcrumb__height p-relative fix" data-background="img/breadcurmb/breadcurmb.jpg">
         <div className="container">
           <div className="row">
             <div className="col-xxl-12">
@@ -56,7 +56,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-01.jpg" alt="" />
+                        <img src="img/products/product-img-01.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -93,7 +93,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-02.jpg" alt="" />
+                        <img src="img/products/product-img-02.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -127,7 +127,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-03.jpg" alt="" />
+                        <img src="img/products/product-img-03.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -161,7 +161,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-04.jpg" alt="" />
+                        <img src="img/products/product-img-04.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -195,7 +195,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-05.jpg" alt="" />
+                        <img src="img/products/product-img-05.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -229,7 +229,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-06.jpg" alt="" />
+                        <img src="img/products/product-img-06.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -263,7 +263,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-07.jpg" alt="" />
+                        <img src="img/products/product-img-07.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -297,7 +297,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-08.jpg" alt="" />
+                        <img src="img/products/product-img-08.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -331,7 +331,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-09.jpg" alt="" />
+                        <img src="img/products/product-img-09.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -365,7 +365,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-10.jpg" alt="" />
+                        <img src="img/products/product-img-10.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -399,7 +399,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-11.jpg" alt="" />
+                        <img src="img/products/product-img-11.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -433,7 +433,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-12.jpg" alt="" />
+                        <img src="img/products/product-img-12.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -467,7 +467,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-13.jpg" alt="" />
+                        <img src="img/products/product-img-13.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -501,7 +501,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-14.jpg" alt="" />
+                        <img src="img/products/product-img-14.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -535,7 +535,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-15.jpg" alt="" />
+                        <img src="img/products/product-img-15.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -569,7 +569,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-16.jpg" alt="" />
+                        <img src="img/products/product-img-16.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -603,7 +603,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-17.jpg" alt="" />
+                        <img src="img/products/product-img-17.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -637,7 +637,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-18.jpg" alt="" />
+                        <img src="img/products/product-img-18.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -671,7 +671,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-19.jpg" alt="" />
+                        <img src="img/products/product-img-19.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -705,7 +705,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-20.jpg" alt="" />
+                        <img src="img/products/product-img-20.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -739,7 +739,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-21.jpg" alt="" />
+                        <img src="img/products/product-img-21.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -773,7 +773,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-22.jpg" alt="" />
+                        <img src="img/products/product-img-22.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -807,7 +807,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-23.jpg" alt="" />
+                        <img src="img/products/product-img-23.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -841,7 +841,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-24.jpg" alt="" />
+                        <img src="img/products/product-img-24.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -875,7 +875,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-25.jpg" alt="" />
+                        <img src="img/products/product-img-25.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -909,7 +909,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-26.jpg" alt="" />
+                        <img src="img/products/product-img-26.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -943,7 +943,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-27.jpg" alt="" />
+                        <img src="img/products/product-img-27.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -977,7 +977,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-28.jpg" alt="" />
+                        <img src="img/products/product-img-28.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -1011,7 +1011,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-29.jpg" alt="" />
+                        <img src="img/products/product-img-29.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -1045,7 +1045,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-30.jpg" alt="" />
+                        <img src="img/products/product-img-30.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -1079,7 +1079,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-31.jpg" alt="" />
+                        <img src="img/products/product-img-31.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -1113,7 +1113,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-32.jpg" alt="" />
+                        <img src="img/products/product-img-32.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -1147,7 +1147,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-33.jpg" alt="" />
+                        <img src="img/products/product-img-33.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -1181,7 +1181,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-34.jpg" alt="" />
+                        <img src="img/products/product-img-34.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -1215,7 +1215,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-35.jpg" alt="" />
+                        <img src="img/products/product-img-35.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -1249,7 +1249,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-36.jpg" alt="" />
+                        <img src="img/products/product-img-36.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -1283,7 +1283,7 @@ const Product = () => {
                   <div className="tp-product-item-2 mb-40">
                     <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
                       <a href="/product-details">
-                        <img src="assets/img/products/product-img-37.jpg" alt="" />
+                        <img src="img/products/product-img-37.jpg" alt="" />
                       </a>
                       <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">

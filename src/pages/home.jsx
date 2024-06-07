@@ -23,11 +23,11 @@ const Home = () => {
                 <div className="swiper-slide">
                   <div className="tp-slider-3-height p-relative">
                     <div className="tp-slider-3-shape-1 d-none d-xl-block">
-                      <img src="assets/img/hero/shape-3-1.png" alt="" />
+                      <img src="img/hero/shape-3-1.png" alt="" />
                     </div>
                     <div
                       className="tp-slider-3-bg"
-                      data-background="assets/img/hero/hero-3-1.png"
+                      data-background="img/hero/hero-3-1.png"
                     />
                     <div className="container">
                       <div className="row">
@@ -53,11 +53,11 @@ const Home = () => {
                 <div className="swiper-slide">
                   <div className="tp-slider-3-height p-relative">
                     <div className="tp-slider-3-shape-1 d-none d-xl-block">
-                      <img src="assets/img/hero/shape-3-1.png" alt="" />
+                      <img src="img/hero/shape-3-1.png" alt="" />
                     </div>
                     <div
                       className="tp-slider-3-bg"
-                      data-background="assets/img/hero/hero-3-2.png"
+                      data-background="img/hero/hero-3-2.png"
                     />
                     <div className="container">
                       <div className="row">
@@ -161,7 +161,7 @@ const Home = () => {
         </div>
         <div className="tp-about-area tp-black-mode p-relative black-bg pt-120 pb-120">
           <div className="tp-about-shape-5 d-none d-xl-block">
-            <img src="assets/img/about/shape-3-3.png" alt="" />
+            <img src="img/about/shape-3-3.png" alt="" />
           </div>
           <div className="container">
             <div className="row">
@@ -169,7 +169,7 @@ const Home = () => {
                 <div className="tp-about-right-box tp-about-right-wrap text-end p-relative">
                   <div
                     className="tp-about-2-thumb-text d-none d-lg-block text-start"
-                    data-background="assets/img/about/bg-1.jpg"
+                    data-background="img/about/bg-1.jpg"
                   >
                     <h6>
                       <i
@@ -184,16 +184,16 @@ const Home = () => {
                     <span>Years of experience</span>
                   </div>
                   <div className="tp-about-main-thumb fix">
-                    <img src="assets/img/about/thumb-3-2.jpg" alt="" />
+                    <img src="img/about/thumb-3-2.jpg" alt="" />
                   </div>
                   <div className="tp-about-thumb-sm">
-                    <img src="assets/img/about/thumb-3-1.jpg" alt="" />
+                    <img src="img/about/thumb-3-1.jpg" alt="" />
                   </div>
                   <div className="tp-about-shape-2  d-none d-lg-block">
-                    <img src="assets/img/about/shape-1-3.png" alt="" />
+                    <img src="img/about/shape-1-3.png" alt="" />
                   </div>
                   <div className="tp-about-shape-6 d-none d-xl-block">
-                    <img src="assets/img/about/shape-3-2.png" alt="" />
+                    <img src="img/about/shape-3-2.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -265,10 +265,10 @@ const Home = () => {
         </div>
         <div className="tp-service-3-area tp-black-mode black-bg-2 p-relative fix pt-120 pb-90">
           <div className="tp-service-3-shape-1 d-none d-xl-block">
-            <img src="assets/img/service/shape-3-1.png" alt="" />
+            <img src="img/service/shape-3-1.png" alt="" />
           </div>
           <div className="tp-service-3-shape-2 d-none d-xl-block">
-            <img src="assets/img/service/shape-3-5.png" alt="" />
+            <img src="img/service/shape-3-5.png" alt="" />
           </div>
           <div className="container">
             <div className="row justify-content-center">
@@ -289,15 +289,15 @@ const Home = () => {
               >
                 <div
                   className="tp-service-3-item fix"
-                  data-background="assets/img/service/sv-3-1.jpg"
+                  data-background="img/service/sv-3-1.jpg"
                 >
                   <div className="tp-service-3-shape-3">
-                    <img src="assets/img/service/shape-3-2.png" alt="" />
+                    <img src="img/service/shape-3-2.png" alt="" />
                   </div>
                   <div className="tp-service-3-content z-index">
                     <div className="tp-service-3-icon pb-20">
                       <span>
-                        <img src="assets/img/products/product-img-01.jpg" />
+                        <img src="img/products/product-img-01.jpg" />
                       </span>
                     </div>
                     <div className="tp-service-3-text pb-30">
@@ -320,15 +320,15 @@ const Home = () => {
               >
                 <div
                   className="tp-service-3-item active fix"
-                  data-background="assets/img/service/sv-3-1.jpg"
+                  data-background="img/service/sv-3-1.jpg"
                 >
                   <div className="tp-service-3-shape-3">
-                    <img src="assets/img/service/shape-3-2.png" alt="" />
+                    <img src="img/service/shape-3-2.png" alt="" />
                   </div>
                   <div className="tp-service-3-content z-index">
                     <div className="tp-service-3-icon pb-20">
                       <span>
-                        <img src="assets/img/products/product-img-02.jpg" />
+                        <img src="img/products/product-img-02.jpg" />
                       </span>
                     </div>
                     <div className="tp-service-3-text pb-30">
@@ -351,15 +351,15 @@ const Home = () => {
               >
                 <div
                   className="tp-service-3-item fix"
-                  data-background="assets/img/service/sv-3-1.jpg"
+                  data-background="img/service/sv-3-1.jpg"
                 >
                   <div className="tp-service-3-shape-3">
-                    <img src="assets/img/service/shape-3-2.png" alt="" />
+                    <img src="img/service/shape-3-2.png" alt="" />
                   </div>
                   <div className="tp-service-3-content z-index">
                     <div className="tp-service-3-icon pb-20">
                       <span>
-                        <img src="assets/img/products/product-img-03.jpg" />
+                        <img src="img/products/product-img-03.jpg" />
                       </span>
                     </div>
                     <div className="tp-service-3-text pb-30">
@@ -382,15 +382,15 @@ const Home = () => {
               >
                 <div
                   className="tp-service-3-item fix"
-                  data-background="assets/img/service/sv-3-1.jpg"
+                  data-background="img/service/sv-3-1.jpg"
                 >
                   <div className="tp-service-3-shape-3">
-                    <img src="assets/img/service/shape-3-2.png" alt="" />
+                    <img src="img/service/shape-3-2.png" alt="" />
                   </div>
                   <div className="tp-service-3-content z-index">
                     <div className="tp-service-3-icon pb-20">
                       <span>
-                        <img src="assets/img/products/product-img-04.jpg" />
+                        <img src="img/products/product-img-04.jpg" />
                       </span>
                     </div>
                     <div className="tp-service-3-text pb-30">
@@ -413,15 +413,15 @@ const Home = () => {
               >
                 <div
                   className="tp-service-3-item fix"
-                  data-background="assets/img/service/sv-3-1.jpg"
+                  data-background="img/service/sv-3-1.jpg"
                 >
                   <div className="tp-service-3-shape-3">
-                    <img src="assets/img/service/shape-3-2.png" alt="" />
+                    <img src="img/service/shape-3-2.png" alt="" />
                   </div>
                   <div className="tp-service-3-content z-index">
                     <div className="tp-service-3-icon pb-20">
                       <span>
-                        <img src="assets/img/products/product-img-06.jpg" />
+                        <img src="img/products/product-img-06.jpg" />
                       </span>
                     </div>
                     <div className="tp-service-3-text pb-30">
@@ -444,15 +444,15 @@ const Home = () => {
               >
                 <div
                   className="tp-service-3-item fix"
-                  data-background="assets/img/service/sv-3-1.jpg"
+                  data-background="img/service/sv-3-1.jpg"
                 >
                   <div className="tp-service-3-shape-3">
-                    <img src="assets/img/service/shape-3-2.png" alt="" />
+                    <img src="img/service/shape-3-2.png" alt="" />
                   </div>
                   <div className="tp-service-3-content z-index">
                     <div className="tp-service-3-icon pb-20">
                       <span>
-                        <img src="assets/img/products/product-img-05.jpg" />
+                        <img src="img/products/product-img-05.jpg" />
                       </span>
                     </div>
                     <div className="tp-service-3-text pb-30">
@@ -475,15 +475,15 @@ const Home = () => {
               >
                 <div
                   className="tp-service-3-item fix"
-                  data-background="assets/img/service/sv-3-1.jpg"
+                  data-background="img/service/sv-3-1.jpg"
                 >
                   <div className="tp-service-3-shape-3">
-                    <img src="assets/img/service/shape-3-2.png" alt="" />
+                    <img src="img/service/shape-3-2.png" alt="" />
                   </div>
                   <div className="tp-service-3-content z-index">
                     <div className="tp-service-3-icon pb-20">
                       <span>
-                        <img src="assets/img/products/product-img-07.jpg" />
+                        <img src="img/products/product-img-07.jpg" />
                       </span>
                     </div>
                     <div className="tp-service-3-text pb-30">
@@ -506,15 +506,15 @@ const Home = () => {
               >
                 <div
                   className="tp-service-3-item fix"
-                  data-background="assets/img/service/sv-3-1.jpg"
+                  data-background="img/service/sv-3-1.jpg"
                 >
                   <div className="tp-service-3-shape-3">
-                    <img src="assets/img/service/shape-3-2.png" alt="" />
+                    <img src="img/service/shape-3-2.png" alt="" />
                   </div>
                   <div className="tp-service-3-content z-index">
                     <div className="tp-service-3-icon pb-20">
                       <span>
-                        <img src="assets/img/products/product-img-08.jpg" />
+                        <img src="img/products/product-img-08.jpg" />
                       </span>
                     </div>
                     <div className="tp-service-3-text pb-30">
@@ -539,11 +539,11 @@ const Home = () => {
         </div>
         <div
           className="tp-choose-3-area tp-choose-3-wrap tp-black-mode p-relative black-bg-2 pt-120 pb-70"
-          data-background="assets/img/service/bg-3.jpg"
+          data-background="img/service/bg-3.jpg"
         >
           <div
             className="tp-choose-3-bg"
-            data-background="assets/img/about/thumb-3-2.jpg"
+            data-background="img/about/thumb-3-2.jpg"
           />
           <div className="container">
             <div className="row">
@@ -600,7 +600,7 @@ const Home = () => {
                   <div className="tp-step-item p-relative text-center">
                     <div className="tp-step-icon">
                       <span>
-                        <img src="assets/img/products/product-img-09.jpg" />
+                        <img src="img/products/product-img-09.jpg" />
                       </span>
                     </div>
                     <div className="tp-step-text">
@@ -625,7 +625,7 @@ const Home = () => {
                   <div className="tp-step-item p-relative text-center">
                     <div className="tp-step-icon">
                       <span>
-                        <img src="assets/img/products/product-img-10.jpg" />
+                        <img src="img/products/product-img-10.jpg" />
                       </span>
                     </div>
                     <div className="tp-step-text">
@@ -647,7 +647,7 @@ const Home = () => {
                   <div className="tp-step-item p-relative text-center">
                     <div className="tp-step-icon">
                       <span>
-                        <img src="assets/img/products/product-img-11.jpg" />
+                        <img src="img/products/product-img-11.jpg" />
                       </span>
                     </div>
                     <div className="tp-step-text">
@@ -672,7 +672,7 @@ const Home = () => {
                   <div className="tp-step-item p-relative text-center">
                     <div className="tp-step-icon">
                       <span>
-                        <img src="assets/img/products/product-img-12.jpg" />
+                        <img src="img/products/product-img-12.jpg" />
                       </span>
                     </div>
                     <div className="tp-step-text">
@@ -697,10 +697,10 @@ const Home = () => {
         </div>
         <div className="tp-testimonial-3-area tp-black-mode tp-testimonial-3-bg tp-testimonial-3-space p-relative fix black-bg">
           <div className="tp-testimonial-3-shape-2">
-            <img src="assets/img/testimonial/shape-5-1.png" alt="" />
+            <img src="img/testimonial/shape-5-1.png" alt="" />
           </div>
           <div className="tp-testimonial-3-shape-3">
-            <img src="assets/img/testimonial/shape-5-2.png" alt="" />
+            <img src="img/testimonial/shape-5-2.png" alt="" />
           </div>
           <div className="container">
             <div className="row">
@@ -723,13 +723,13 @@ const Home = () => {
                         <div className="tp-testimonial-3-item-wrap p-relative">
                           <div className="tp-testimonial-3-shape-1">
                             <img
-                              src="assets/img/testimonial/shape-3-1.png"
+                              src="img/testimonial/shape-3-1.png"
                               alt=""
                             />
                           </div>
                           <div className="tp-testimonial-3-item p-relative text-center">
                             <div className="tp-testimonial-3-avata">
-                              <img src="assets/img/testimonial/user.png" alt="" />
+                              <img src="img/testimonial/user.png" alt="" />
                             </div>
                             <div className="tp-testimonial-3-author-info pb-20">
                               <h5 className="tp-testimonial-3-title">
@@ -758,13 +758,13 @@ const Home = () => {
                         <div className="tp-testimonial-3-item-wrap p-relative">
                           <div className="tp-testimonial-3-shape-1">
                             <img
-                              src="assets/img/testimonial/shape-3-1.png"
+                              src="img/testimonial/shape-3-1.png"
                               alt=""
                             />
                           </div>
                           <div className="tp-testimonial-3-item p-relative text-center">
                             <div className="tp-testimonial-3-avata">
-                              <img src="assets/img/testimonial/user.png" alt="" />
+                              <img src="img/testimonial/user.png" alt="" />
                             </div>
                             <div className="tp-testimonial-3-author-info pb-20">
                               <h5 className="tp-testimonial-3-title">
@@ -793,13 +793,13 @@ const Home = () => {
                         <div className="tp-testimonial-3-item-wrap p-relative">
                           <div className="tp-testimonial-3-shape-1">
                             <img
-                              src="assets/img/testimonial/shape-3-1.png"
+                              src="img/testimonial/shape-3-1.png"
                               alt=""
                             />
                           </div>
                           <div className="tp-testimonial-3-item p-relative text-center">
                             <div className="tp-testimonial-3-avata">
-                              <img src="assets/img/testimonial/user.png" alt="" />
+                              <img src="img/testimonial/user.png" alt="" />
                             </div>
                             <div className="tp-testimonial-3-author-info pb-20">
                               <h5 className="tp-testimonial-3-title">
@@ -828,13 +828,13 @@ const Home = () => {
                         <div className="tp-testimonial-3-item-wrap p-relative">
                           <div className="tp-testimonial-3-shape-1">
                             <img
-                              src="assets/img/testimonial/shape-3-1.png"
+                              src="img/testimonial/shape-3-1.png"
                               alt=""
                             />
                           </div>
                           <div className="tp-testimonial-3-item p-relative text-center">
                             <div className="tp-testimonial-3-avata">
-                              <img src="assets/img/testimonial/user.png" alt="" />
+                              <img src="img/testimonial/user.png" alt="" />
                             </div>
                             <div className="tp-testimonial-3-author-info pb-20">
                               <h5 className="tp-testimonial-3-title">
@@ -872,13 +872,13 @@ const Home = () => {
               <div className="col-xl-6 col-lg-6">
                 <div className="tp-cta-3-left-wrap theme-bg z-index-3 p-relative">
                   <div className="tp-cta-3-left-shape d-none d-xl-block">
-                    <img src="assets/img/cta/shape-3-1.png" alt="" />
+                    <img src="img/cta/shape-3-1.png" alt="" />
                   </div>
                   <div className="tp-cta-3-left-box">
                     <div className="row align-items-center">
                       <div className="col-xl-6 col-lg-6 col-md-5 d-none d-md-block">
                         <div className="tp-cta-3-left-thumb">
-                          <img src="assets/img/cta/cta-3-1.jpg" alt="" />
+                          <img src="img/cta/cta-3-1.jpg" alt="" />
                         </div>
                       </div>
                       <div className="col-xl-6 col-lg-6 col-md-7">
@@ -901,14 +901,14 @@ const Home = () => {
                 <div className="tp-cta-3-right-wrap black-bg-4">
                   <div
                     className="tp-cta-3-right-box jarallax z-index"
-                    data-background="assets/img/cta/cta-3-2.jpg"
+                    data-background="img/cta/cta-3-2.jpg"
                   >
                     <h4 className="tp-section-title text-white text-center z-index-3">
                       Outstanding residential &amp; <br /> commercial services{" "}
                       <br /> for your family
                     </h4>
                     <div className="tp-cta-3-right-shape">
-                      <img src="assets/img/cta/shape-3-2.png" alt="" />
+                      <img src="img/cta/shape-3-2.png" alt="" />
                     </div>
                   </div>
                 </div>

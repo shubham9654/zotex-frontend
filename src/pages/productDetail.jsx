@@ -3,7 +3,7 @@
 const ProductDetail = () => {
   return (
     <main>
-      <div className="breadcrumb__area breadcrumb__overlay breadcrumb__height p-relative fix" data-background="assets/img/breadcurmb/breadcurmb.jpg">
+      <div className="breadcrumb__area breadcrumb__overlay breadcrumb__height p-relative fix" data-background="img/breadcurmb/breadcurmb.jpg">
         <div className="container">
           <div className="row">
             <div className="col-xxl-12">
@@ -30,22 +30,22 @@ const ProductDetail = () => {
                   <div className="tab-content" id="nav-tabContent">
                     <div className="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
                       <div className="tp-shop-details__tab-big-img">
-                        <img src="assets/img/products/product-img-02.jpg" alt="" />
+                        <img src="img/products/product-img-02.jpg" alt="" />
                       </div>
                     </div>
                     <div className="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab">
                       <div className="tp-shop-details__tab-big-img">
-                        <img src="assets/img/products/product-img-03.jpg" alt="" />
+                        <img src="img/products/product-img-03.jpg" alt="" />
                       </div>
                     </div>
                     <div className="tab-pane fade" id="nav-three" role="tabpanel" aria-labelledby="nav-three-tab">
                       <div className="tp-shop-details__tab-big-img">
-                        <img src="assets/img/products/product-img-04.jpg" alt="" />
+                        <img src="img/products/product-img-04.jpg" alt="" />
                       </div>
                     </div>
                     <div className="tab-pane fade" id="nav-four" role="tabpanel" aria-labelledby="nav-four-tab">
                       <div className="tp-shop-details__tab-big-img">
-                        <img src="assets/img/products/product-img-05.jpg" alt="" />
+                        <img src="img/products/product-img-05.jpg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -54,16 +54,16 @@ const ProductDetail = () => {
                   <nav>
                     <div className="nav nav-tab" id="nav-tab" role="tablist">
                       <button className="nav-links active" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#nav-one" type="button" role="tab" aria-controls="nav-one" aria-selected="true">
-                        <img src="assets/img/products/product-img-02.jpg" alt="" />
+                        <img src="img/products/product-img-02.jpg" alt="" />
                       </button>
                       <button className="nav-links" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#nav-two" type="button" role="tab" aria-controls="nav-two" aria-selected="false">
-                        <img src="assets/img/products/product-img-03.jpg" alt="" />
+                        <img src="img/products/product-img-03.jpg" alt="" />
                       </button>
                       <button className="nav-links" id="nav-three-tab" data-bs-toggle="tab" data-bs-target="#nav-three" type="button" role="tab" aria-controls="nav-three" aria-selected="false">
-                        <img src="assets/img/products/product-img-04.jpg" alt="" />
+                        <img src="img/products/product-img-04.jpg" alt="" />
                       </button>
                       <button className="nav-links" id="nav-four-tab" data-bs-toggle="tab" data-bs-target="#nav-four" type="button" role="tab" aria-controls="nav-four" aria-selected="false">
-                        <img src="assets/img/products/product-img-05.jpg" alt="" />
+                        <img src="img/products/product-img-05.jpg" alt="" />
                       </button>
                     </div>
                   </nav>

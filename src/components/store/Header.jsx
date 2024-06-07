@@ -52,7 +52,7 @@ const Header = () => {
               <div className="col-xl-3 col-lg-4 col-md-4 col-6">
                 <div className="tp-header-logo">
                   <a href="/">
-                    <img src="assets/img/logo/white-logo.png" alt="" />
+                    <img src="img/logo/white-logo.png" alt="" />
                   </a>
                 </div>
               </div>

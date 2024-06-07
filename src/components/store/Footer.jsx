@@ -3,10 +3,10 @@ const Footer = () => {
     <footer>
       <div className="tp-footer-area p-relative z-index-3 fix black-bg pt-120 pb-70">
         <div className="tp-footer-shape-1 d-none d-lg-block">
-          <img src="assets/img/footer/shape-1-1.png" alt="" />
+          <img src="img/footer/shape-1-1.png" alt="" />
         </div>
         <div className="tp-footer-shape-2 d-none d-lg-block">
-          <img src="assets/img/footer/shape-1-3.png" alt="" />
+          <img src="img/footer/shape-1-3.png" alt="" />
         </div>
         <div className="container">
           <div className="row">
@@ -18,7 +18,7 @@ const Footer = () => {
               <div className="tp-footer-widget footer-cols-1">
                 <div className="tp-footer-logo">
                   <a href="/">
-                    <img src="assets/img/logo/white-logo.png" alt="" />
+                    <img src="img/logo/white-logo.png" alt="" />
                   </a>
                 </div>
                 <div className="tp-footer-text">
