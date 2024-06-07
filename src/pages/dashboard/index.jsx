@@ -1,9 +1,12 @@
+import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+
+import Button from "../../components/dashboard/ui/Button";
 import { Table } from "../../components/dashboard/table/Table";
 import { tableStatusValue } from "../../data/tableData";
 import { SearchBar } from "../../components/dashboard/SearchBar";
-import Button from "../../components/dashboard/ui/Button";
 import { Pagination } from "../../components/dashboard/table/Pagination";
+import { useProduct } from "../../stores/product.store";
 
 const data = [
 	{
@@ -70,16 +73,15 @@ const data = [
 
 const Dashboard = () => {
 	const navigate = useNavigate();
+	const { productList, getAllProducts, isLoading } = useProduct((state) => state)
+
 	const columns = [
-		{ Header: "Client Name", accessor: "clientName", minWidth: 130 },
-		{ Header: "Mobile Number", accessor: "mobileNumber", minWidth: 130 },
-		{ Header: "Created At", accessor: "createdAt", minWidth: 130 },
-		{ Header: "Last Updated At", accessor: "updatedAt", minWidth: 130 },
+		{ Header: "S No", accessor: "sno", minWidth: 120 },
+		{ Header: "Product Name", accessor: "name", minWidth: 150 },
+		{ Header: "Product Description", accessor: "description", minWidth: 200 },
+		{ Header: "Categories", accessor: "categories", minWidth: 130 },
 		{
-			Header: "Status",
-			accessor: "status",
-			minWidth: 150,
-			Cell: ({ row }) => (
+			Header: "MRP", accessor: "mrp", minWidth: 130, Cell: ({ row }) => (
 				<div
 					className="min-w-[95px] px-3 py-1 inline-flex justify-center rounded-[6px] text-xs font-medium font-poppins"
 					style={{
@@ -90,14 +92,20 @@ const Dashboard = () => {
 				</div>
 			),
 		},
+		{ Header: "Selling Price", accessor: "sellingPrice", minWidth: 130 },
 		{
-			Header: "Steps",
-			accessor: "steps",
+			Header: "Status",
+			accessor: "status",
 			minWidth: 150,
+			Cell: ({ row }) => (
+				<div
+				>
+					{row.original.status}
+				</div>
+			),
 		},
-		{ Header: "Source", accessor: "source", minWidth: 90 },
-		{ Header: "RM", accessor: "rm", minWidth: 100 },
-		{ Header: "Verifier", accessor: "verifier", minWidth: 100 },
+		{ Header: "Created At", accessor: "createdAt", minWidth: 130 },
+		{ Header: "Last Updated At", accessor: "updatedAt", minWidth: 130 },
 		{
 			Header: "Actions",
 			accessor: "actions",
@@ -131,6 +139,13 @@ const Dashboard = () => {
 		navigate('/dashboard/edit-product');
 	}
 
+	useEffect(() => {
+		getAllProducts()
+	}, []);
+
+
+	console.log(productList, 'dfdfdf');
+
 	return (
 		<div className="w-full flex flex-col ">
 			<div className="w-full py-[20px] px-2 md:!px-[24px] mb-[30px] overflow-x-auto rounded-[10px] bg-white shadow-[0px_4px_15px_rgba(171,171,171,0.25)]">
@@ -140,7 +155,7 @@ const Dashboard = () => {
 				</div>
 				<Table
 					columns={columns}
-					data={[...data, ...data]}
+					data={productList}
 					displayBlock={true}
 				/>
 				<div>

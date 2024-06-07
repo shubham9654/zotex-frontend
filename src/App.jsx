@@ -9,6 +9,7 @@ import ProductDetail from "./pages/productDetail";
 import Dashboard from "./pages/dashboard";
 import Layout from "./components/store/Layout";
 import DashboardLayout from "./components/dashboard/DashboardLayout";
+import EditProduct from "./pages/dashboard/edit-product";
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/dashboard" element={<DashboardLayout />}>
             <Route index element={<Dashboard />} />
-            {/* <Route path="/dashboard/login" element={<Login />} /> */}
+            <Route path="/dashboard/edit-product" element={<EditProduct />} />
           </Route>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
