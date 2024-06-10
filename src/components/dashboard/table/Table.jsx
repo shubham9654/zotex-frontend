@@ -1,6 +1,6 @@
 import { useTable } from 'react-table';
 
-export const Table = ({ columns, data, displayBlock }) => {
+export const Table = ({ columns, data, displayBlock, isLoading }) => {
 	const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = useTable({ columns, data });
 
 	return (
@@ -31,8 +31,8 @@ export const Table = ({ columns, data, displayBlock }) => {
 						</tr>
 					))}
 				</thead>
-				<tbody {...getTableBodyProps()}>
-					{rows.map((row, i1) => {
+				<tbody {...getTableBodyProps()} className={isLoading ? "flex items-center justify-center my-20" : ""}>
+					{!isLoading ? rows.map((row, i1) => {
 						prepareRow(row);
 						return (
 							<tr
@@ -53,7 +53,7 @@ export const Table = ({ columns, data, displayBlock }) => {
 								})}
 							</tr>
 						);
-					})}
+					}): <div className="w-full text-center">Loading...</div>}
 				</tbody>
 			</table>
 		</div>
