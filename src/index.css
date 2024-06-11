@@ -32,3 +32,24 @@ body {
 .scroll:hover::-webkit-scrollbar-thumb {
   visibility: visible;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::selection {
+  background-color: #0074ffcc;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: #0074ffcc;
+  color: #ffffff;
+}
