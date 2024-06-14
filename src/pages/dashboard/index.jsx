@@ -17,40 +17,56 @@ const Dashboard = () => {
 
   const columns = [
     { Header: "S No", accessor: "sno", minWidth: 50 },
-    { Header: "Product Name", accessor: "name", minWidth: 150 },
+    {
+      Header: "Product Name",
+      accessor: "name",
+      minWidth: 150,
+      Cell: ({ row }) => (
+        <div className="flex items-center gap-x-2">
+          {row.original?.images?.length > 0 && (
+            <img
+              src={`${import.meta.env.VITE_API_BASE_URL}image/${row.original?.images[0]}`}
+              className="w-[32px] h-[32px] rounded-full"
+            />
+          )}
+          <span>{row.original.name}</span>
+        </div>
+      ),
+    },
     { Header: "Product Description", accessor: "description", minWidth: 200 },
     {
       Header: "Categories",
       accessor: "categories",
       minWidth: 130,
       Cell: ({ row }) => (
-        <div>{row.original.categories.map((u) => u.name).join(", ")}</div>
+        <span>{row.original.categories.map((u) => u.name).join(", ")}</span>
       ),
     },
     {
       Header: "MRP",
       accessor: "mrp",
       minWidth: 130,
-			Cell: ({ row }) => (
-        <div>₹ {row.original.price?.mrp}</div>
-      ),
+      Cell: ({ row }) => <span>₹ {row.original.price?.mrp}</span>,
     },
-    { Header: "Selling Price", accessor: "sellingPrice", minWidth: 130, Cell: ({ row }) => (
-			<div>₹ {row.original.price?.sellingPrice}</div>
-		), },
+    {
+      Header: "Selling Price",
+      accessor: "sellingPrice",
+      minWidth: 130,
+      Cell: ({ row }) => <span>₹ {row.original.price?.sellingPrice}</span>,
+    },
     {
       Header: "Status",
       accessor: "status",
       minWidth: 150,
       Cell: ({ row }) => (
-        <div
+        <span
           className="min-w-[95px] px-3 py-1 inline-flex justify-center rounded-[6px] text-xs font-medium font-poppins"
           style={{
             backgroundColor: tableStatusValue[row.original.status]?.bgColor,
           }}
         >
           {row.original.status}
-        </div>
+        </span>
       ),
     },
     {
@@ -58,7 +74,9 @@ const Dashboard = () => {
       accessor: "createdAt",
       minWidth: 160,
       Cell: ({ row }) => (
-        <div>{dayjs(row.original.createdAt).format("hh:mm, DD MMM YYYY")}</div>
+        <span>
+          {dayjs(row.original.createdAt).format("hh:mm, DD MMM YYYY")}
+        </span>
       ),
     },
     {
@@ -66,7 +84,9 @@ const Dashboard = () => {
       accessor: "updatedAt",
       minWidth: 160,
       Cell: ({ row }) => (
-        <div>{dayjs(row.original.updatedAt).format("hh:mm, DD MMM YYYY")}</div>
+        <span>
+          {dayjs(row.original.updatedAt).format("hh:mm, DD MMM YYYY")}
+        </span>
       ),
     },
     {
@@ -74,7 +94,7 @@ const Dashboard = () => {
       accessor: "actions",
       minWidth: 60,
       Cell: () => (
-        <div className="flex items-center justify-center gap-2">
+        <span className="flex items-center justify-center gap-2">
           <Link to="/dashboard/edit-product">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +113,7 @@ const Dashboard = () => {
             </svg>
           </Link>
           {/* <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye cursor-pointer"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> */}
-        </div>
+        </span>
       ),
     },
   ];
@@ -113,7 +133,12 @@ const Dashboard = () => {
           <SearchBar />
           <Button text="+ Add Product" handleClick={handleAddProduct} />
         </div>
-        <Table columns={columns} data={productList} displayBlock={true} isLoading={isLoading} />
+        <Table
+          columns={columns}
+          data={productList}
+          displayBlock={true}
+          isLoading={isLoading}
+        />
         <div>
           <Pagination totalCount={totalCount} />
         </div>

@@ -15,22 +15,21 @@ export const Input = ({
       </label>
       {inputType === "area" ? (
         <textarea
-          className="px-2 py-2 text-[#353535] rounded-[10px] resize-none shadow-[0px_2px_10px_rgba(201,201,201,0.25)] font-poppinsRegular leading-6 border-0 border-none focus:border-none focus:outline-none bg-white"
+          className="px-2 py-2 !min-h-[120px] !h-[120px] text-[#353535] rounded-[10px] resize-none shadow-[0px_2px_10px_rgba(201,201,201,0.25)] font-poppinsRegular leading-6 border-0 border-none focus:border-none focus:outline-none bg-white"
           placeholder={placeholder}
-          style={{ minHeight: '120px' }}
-          maxLength={500}
+          maxLength={700}
           {...register(name, {
             required: true,
           })}
         />
       ) : (
         <input
-          className="px-2 h-[47px] text-[#353535] rounded-[10px] shadow-[0px_2px_10px_rgba(201,201,201,0.25)] font-poppinsRegular leading-6 border-0 border-none focus:border-none focus:outline-none bg-white"
+          className="px-2 max-h-[47px] !h-[47px] text-[#353535] rounded-[10px] shadow-[0px_2px_10px_rgba(201,201,201,0.25)] font-poppinsRegular leading-6 border-0 border-none focus:border-none focus:outline-none bg-white"
           placeholder={placeholder}
           type={type}
           disabled={isDisable}
           maxLength={200}
-          max={5}
+          max={10000}
           {...register(name, {
             required: true,
           })}

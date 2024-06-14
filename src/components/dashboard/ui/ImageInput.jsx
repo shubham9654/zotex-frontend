@@ -1,10 +1,9 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-const ImageUpload = () => {
+const ImageUpload = ({ setImageFile }) => {
   const [image, setImage] = useState(null);
 
-  const handleImageUpload = (event) => {
-    const file = event.target.files[0];
+  const setImageState = (file) => {
     const reader = new FileReader();
 
     reader.onloadend = () => {
@@ -14,6 +13,12 @@ const ImageUpload = () => {
     if (file) {
       reader.readAsDataURL(file);
     }
+  };
+
+  const handleImageUpload = async (event) => {
+    const file = event.target.files[0];
+    setImageState(file);
+    setImageFile(file);
   };
 
   return (
@@ -28,12 +33,19 @@ const ImageUpload = () => {
         className="hidden"
         id="image-upload"
       />
-      <label htmlFor="image-upload" className="block cursor-pointer rounded-[10px] shadow-[0px_2px_10px_rgba(201,201,201,0.25)]">
+      <label
+        htmlFor="image-upload"
+        className="block cursor-pointer rounded-[10px] shadow-[0px_2px_10px_rgba(201,201,201,0.25)]"
+      >
         {image ? (
-          <img src={image} alt="Uploaded" className="w-full h-auto rounded-[10px]" />
+          <img
+            src={image}
+            alt="Uploaded"
+            className="w-full h-auto rounded-[10px]"
+          />
         ) : (
           <div className="h-40 flex justify-center items-center rounded-[10px] bg-white">
-            <span className="text-gray-400">Upload Image</span>
+            <span className="text-gray-400">+ Upload Image</span>
           </div>
         )}
       </label>

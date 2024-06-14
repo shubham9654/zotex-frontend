@@ -1,4 +1,7 @@
+import axios from "axios";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from 'react-toastify';
 
 import ImageUpload from "../../components/dashboard/ui/ImageInput";
 import { Input } from "../../components/dashboard/ui/Input";
@@ -8,10 +11,31 @@ const EditProduct = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const [imageFile, setImageFile] = useState();
+
+  const onSubmit = async ({ name, description, mrp, sellingPrice }) => {
+    if (!imageFile) {
+      toast.warning("Please upload image!");
+    } else {
+      const formData = new FormData();
+      formData.append('name', name);
+      formData.append('description', description);
+      formData.append('mrp', mrp);
+      formData.append('sellingPrice', sellingPrice);
+      formData.append('image', imageFile);
+
+      try {
+        await axios.post(`${import.meta.env.VITE_API_BASE_URL}product/`, formData);
+        reset();
+        toast.success("Product created Successfully!");
+      } catch (error) {
+        console.error('Error creating product:', error);
+        toast.error("Error creating product. Please try again later.");
+      }
+    }
   };
 
   return (
@@ -43,7 +67,7 @@ const EditProduct = () => {
               errors={errors}
             />
             <Input
-              name="selling_price"
+              name="sellingPrice"
               label="Selling Price"
               placeholder="Enter Selling Price"
               type="number"
@@ -51,8 +75,8 @@ const EditProduct = () => {
               errors={errors}
             />
           </div>
-          <div className="flex">
-            <ImageUpload />
+          <div className="flex mt-[16px] md:mt-0">
+            <ImageUpload setImageFile={setImageFile} />
           </div>
         </div>
         <input
