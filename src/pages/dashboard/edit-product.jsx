@@ -32,6 +32,7 @@ const EditProduct = () => {
 
       try {
         if (isEditProduct) {
+          formData.append("imageId", selectedProduct?.images[0]);
           const data = await axios.put(
             `${import.meta.env.VITE_API_BASE_URL}product/${selectedProduct._id}`,
             formData
