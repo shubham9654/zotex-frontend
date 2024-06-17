@@ -20,7 +20,7 @@ const EditProduct = () => {
   const [editImageUrl, setEditImageUrl] = useState();
 
   const onSubmit = async ({ name, description, mrp, sellingPrice }) => {
-    if (!imageFile) {
+    if (!imageFile && !isEditProduct) {
       toast.warning("Please upload image!");
     } else {
       const formData = new FormData();
