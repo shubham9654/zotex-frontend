@@ -1,17 +1,21 @@
 import { Link, useNavigate } from 'react-router-dom';
 
-import { svgAssets } from '../../assets/image';
 import Button from './ui/Button';
+import { svgAssets } from '../../assets/image';
+import { useDialog } from '../../stores/dialog.store';
 
 export const  Navbar = () => {
 	const navigate = useNavigate();
+	const { isOpen } = useDialog(
+    (state) => state
+  )
 
 	const handleAddProduct = () => {
 		navigate('/dashboard/edit-product');
 	}
 
 	return (
-		<div className="w-full !py-5 flex items-center z-50 fixed bg-[#F6F8F9]">
+		<div className={`w-full !py-5 flex items-center z-50  fixed ${isOpen ? 'bg-transparent' : 'bg-[#F6F8F9]'}`}>
 			<div className="pl-10 cursor-pointer absolute">
 				<Link to="/dashboard">
 					<h6 className="text-3xl font-medium font-poppins">Admin Panel</h6>
