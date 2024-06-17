@@ -1,14 +1,16 @@
-import axios from 'axios';
-import { create } from 'zustand'
+import axios from "axios";
+import { create } from "zustand";
 
 export const useProduct = create((set) => ({
   productList: [],
   totalCount: null,
   isLoading: false,
-  getAllProducts: async () => {
+  getAllProducts: async ({ search = "" }) => {
     try {
       set(() => ({ isLoading: true }));
-      const fetchData = await axios.get(`${import.meta.env.VITE_API_BASE_URL}product/all`);
+      const fetchData = await axios.get(
+        `${import.meta.env.VITE_API_BASE_URL}product/all?search=${search}`
+      );
       set(() => ({
         productList: fetchData?.data?.data || [],
         totalCount: fetchData?.data?.totalCount || [],
@@ -17,5 +19,5 @@ export const useProduct = create((set) => ({
     } catch {
       set(() => ({ isLoading: false }));
     }
-  }
-}))
+  },
+}));

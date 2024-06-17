@@ -123,7 +123,7 @@ const Dashboard = () => {
   };
 
   useEffect(() => {
-    getAllProducts();
+    getAllProducts({ });
   }, []);
 
   return (

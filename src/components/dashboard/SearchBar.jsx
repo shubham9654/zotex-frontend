@@ -1,11 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useDebounce } from "use-debounce";
+
+import { useProduct } from "../../stores/product.store";
 
 export const SearchBar = ({ placeholder }) => {
+  const { getAllProducts } = useProduct((state) => state);
   const [searchText, setSearchText] = useState("");
+  const [value] = useDebounce(searchText, 1000);
 
-  const handleSearch = ({ value }) => {
-    setSearchText(value);
-  };
+  useEffect(() => {
+    getAllProducts({ search: value })
+  }, [value])
 
   return (
     <>
@@ -23,9 +28,9 @@ export const SearchBar = ({ placeholder }) => {
           <input
             className="w-full !h-[45px] pr-5 m-0 text-xs inline-flex items-center outline-none !focus:outline-none border-0 border-none focus:border-none font-poppins bg-white"
             type="text"
-            placeholder={placeholder || "Search products"}
+            placeholder={placeholder || "Search by name or desc..."}
             value={searchText}
-            onChange={(e) => handleSearch({ value: e.target.value })}
+            onChange={(e) => setSearchText(e.target.value )}
           />
         </div>
       </div>
