@@ -1,17 +1,4 @@
-import { useEffect, useState } from "react";
-import { useDebounce } from "use-debounce";
-
-import { useProduct } from "../../stores/product.store";
-
-export const SearchBar = ({ placeholder }) => {
-  const { getAllProducts } = useProduct((state) => state);
-  const [searchText, setSearchText] = useState("");
-  const [value] = useDebounce(searchText, 1000);
-
-  useEffect(() => {
-    getAllProducts({ search: value })
-  }, [value])
-
+export const SearchBar = ({ placeholder, searchText, setSearchText }) => {
   return (
     <>
       <div

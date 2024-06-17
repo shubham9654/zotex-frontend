@@ -1,5 +1,6 @@
 import dayjs from "dayjs";
-import { useEffect } from "react";
+import { useDebounce } from "use-debounce";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import Button from "../../components/dashboard/ui/Button";
@@ -11,6 +12,10 @@ import { useProduct } from "../../stores/product.store";
 
 const Dashboard = () => {
   const navigate = useNavigate();
+  const [searchText, setSearchText] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [searchValue] = useDebounce(searchText, 1000);
+
   const { productList, getAllProducts, totalCount, isLoading } = useProduct(
     (state) => state
   );
@@ -25,7 +30,9 @@ const Dashboard = () => {
         <div className="flex items-center gap-x-2">
           {row.original?.images?.length > 0 && (
             <img
-              src={`${import.meta.env.VITE_API_BASE_URL}image/${row.original?.images[0]}`}
+              src={`${import.meta.env.VITE_API_BASE_URL}image/${
+                row.original?.images[0]
+              }`}
               className="w-[32px] h-[32px] rounded-full"
             />
           )}
@@ -123,14 +130,20 @@ const Dashboard = () => {
   };
 
   useEffect(() => {
-    getAllProducts({ });
-  }, []);
+    if (searchText.length === 1) {
+      setCurrentPage(1)
+    }
+  }, [searchText?.length])
 
+  useEffect(() => {
+    getAllProducts({ page: currentPage, search: searchValue });
+  }, [currentPage, searchValue]);
+ 
   return (
     <div className="w-full flex flex-col ">
       <div className="w-full py-[20px] px-2 md:!px-[24px] mb-[30px] overflow-x-auto rounded-[10px] bg-white shadow-[0px_4px_15px_rgba(171,171,171,0.25)]">
         <div className="mb-4 flex items-center justify-between">
-          <SearchBar />
+          <SearchBar searchText={searchText} setSearchText={setSearchText} />
           <Button text="+ Add Product" handleClick={handleAddProduct} />
         </div>
         <Table
@@ -140,7 +153,11 @@ const Dashboard = () => {
           isLoading={isLoading}
         />
         <div>
-          <Pagination totalCount={totalCount} />
+          <Pagination
+            totalCount={totalCount}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
         </div>
       </div>
     </div>
