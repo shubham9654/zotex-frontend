@@ -6,7 +6,7 @@ const Product = () => {
     (state) => state
   );
   useEffect(() => {
-    getAllProducts();
+    getAllProducts({});
   }, [])
 
   return (

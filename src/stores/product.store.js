@@ -5,6 +5,18 @@ export const useProduct = create((set) => ({
   productList: [],
   totalCount: null,
   isLoading: false,
+  isEditProduct: false,
+  setIsEditProduct: () => {
+    set(() => ({
+      isEditProduct: true
+    }))
+  },
+  selectedProduct: {},
+  setSelectedProduct: (data) => {
+    set(() => ({
+      selectedProduct: data
+    }))
+  },
   getAllProducts: async ({ search = "", page }) => {
     try {
       set(() => ({ isLoading: true }));

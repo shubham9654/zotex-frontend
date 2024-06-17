@@ -1,15 +1,17 @@
+import axios from "axios";
 import dayjs from "dayjs";
+import { toast } from "react-toastify";
 import { useDebounce } from "use-debounce";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import Button from "../../components/dashboard/ui/Button";
+import DialogBox from "../../components/dashboard/ui/DialogBox";
 import { Table } from "../../components/dashboard/table/Table";
 import { tableStatusValue } from "../../data/tableData";
 import { SearchBar } from "../../components/dashboard/SearchBar";
 import { Pagination } from "../../components/dashboard/table/Pagination";
 import { useProduct } from "../../stores/product.store";
-import DialogBox from "../../components/dashboard/ui/DialogBox";
 import { useDialog } from "../../stores/dialog.store";
 
 const Dashboard = () => {
@@ -19,9 +21,15 @@ const Dashboard = () => {
   const [searchValue] = useDebounce(searchText, 1000);
 
   const { toggleDialog } = useDialog((state) => state);
-  const { productList, getAllProducts, totalCount, isLoading } = useProduct(
-    (state) => state
-  );
+  const {
+    productList,
+    totalCount,
+    isLoading,
+    getAllProducts,
+    setIsEditProduct,
+    selectedProduct,
+    setSelectedProduct,
+  } = useProduct((state) => state);
 
   const columns = [
     {
@@ -110,9 +118,15 @@ const Dashboard = () => {
       Header: "Actions",
       accessor: "actions",
       minWidth: 60,
-      Cell: () => (
+      Cell: ({ row }) => (
         <span className="flex items-center justify-center gap-2">
-          <Link to="/dashboard/edit-product">
+          <Link
+            to="/dashboard/edit-product"
+            onClick={() => {
+              setIsEditProduct();
+              setSelectedProduct(row.original);
+            }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -135,7 +149,10 @@ const Dashboard = () => {
             strokeWidth={1.5}
             stroke="currentColor"
             className="size-5 cursor-pointer"
-            onClick={() => toggleDialog(true)}
+            onClick={() => {
+              toggleDialog(true);
+              setSelectedProduct(row.original);
+            }}
           >
             <path
               strokeLinecap="round"
@@ -150,6 +167,19 @@ const Dashboard = () => {
 
   const handleAddProduct = () => {
     navigate("/dashboard/edit-product");
+  };
+
+  const handleDelete = async () => {
+    try {
+      const data = await axios.delete(
+        `${import.meta.env.VITE_API_BASE_URL}product/${selectedProduct._id}`
+      );
+      toggleDialog(false);
+      toast.success(data.data.message);
+      getAllProducts({ page: currentPage, search: searchValue });
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   useEffect(() => {
@@ -188,6 +218,7 @@ const Dashboard = () => {
       <DialogBox
         title="Delete Product"
         message="Are you sure you want to delete product ?"
+        handleDelete={handleDelete}
       />
     </>
   );

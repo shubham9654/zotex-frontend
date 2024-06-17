@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ImageUpload = ({ setImageFile }) => {
+const ImageUpload = ({ setImageFile, editImageUrl, setEditImageUrl }) => {
   const [image, setImage] = useState(null);
 
   const setImageState = (file) => {
@@ -19,6 +19,7 @@ const ImageUpload = ({ setImageFile }) => {
     const file = event.target.files[0];
     setImageState(file);
     setImageFile(file);
+    setEditImageUrl(null);
   };
 
   return (
@@ -37,9 +38,9 @@ const ImageUpload = ({ setImageFile }) => {
         htmlFor="image-upload"
         className="block cursor-pointer rounded-[10px] shadow-[0px_2px_10px_rgba(201,201,201,0.25)]"
       >
-        {image ? (
+        {editImageUrl || image ? (
           <img
-            src={image}
+            src={editImageUrl || image}
             alt="Uploaded"
             className="w-full h-auto rounded-[10px]"
           />

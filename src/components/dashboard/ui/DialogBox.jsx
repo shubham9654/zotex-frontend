@@ -9,7 +9,7 @@ import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 
 import { useDialog } from "../../../stores/dialog.store";
 
-export default function DialogBox({ title, message }) {
+export default function DialogBox({ title, message, handleDelete }) {
   const { isOpen, toggleDialog } = useDialog((state) => state);
 
   return (
@@ -70,7 +70,10 @@ export default function DialogBox({ title, message }) {
                   <button
                     type="button"
                     className="inline-flex w-auto justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 ml-3 sm:w-auto"
-                    onClick={() => toggleDialog(false)}
+                    onClick={() => {
+                      handleDelete();
+                      toggleDialog(false);
+                    }}
                   >
                     Delete
                   </button>

@@ -1,42 +1,70 @@
 import axios from "axios";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
-import ImageUpload from "../../components/dashboard/ui/ImageInput";
 import { Input } from "../../components/dashboard/ui/Input";
+import ImageUpload from "../../components/dashboard/ui/ImageInput";
+import { useProduct } from "../../stores/product.store";
 
 const EditProduct = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-    reset
+    reset,
+    setValue,
   } = useForm();
-
+  const { isEditProduct, selectedProduct } = useProduct((state) => state);
   const [imageFile, setImageFile] = useState();
+  const [editImageUrl, setEditImageUrl] = useState();
 
   const onSubmit = async ({ name, description, mrp, sellingPrice }) => {
     if (!imageFile) {
       toast.warning("Please upload image!");
     } else {
       const formData = new FormData();
-      formData.append('name', name);
-      formData.append('description', description);
-      formData.append('mrp', mrp);
-      formData.append('sellingPrice', sellingPrice);
-      formData.append('image', imageFile);
+      formData.append("name", name);
+      formData.append("description", description);
+      formData.append("mrp", mrp);
+      formData.append("sellingPrice", sellingPrice);
+      formData.append("image", imageFile);
 
       try {
-        await axios.post(`${import.meta.env.VITE_API_BASE_URL}product/`, formData);
+        if (isEditProduct) {
+          const data = await axios.put(
+            `${import.meta.env.VITE_API_BASE_URL}product/${selectedProduct._id}`,
+            formData
+          );
+          toast.success(data.data.message);
+        } else {
+          await axios.post(
+            `${import.meta.env.VITE_API_BASE_URL}product/`,
+            formData
+          );
+        }
         reset();
-        toast.success("Product created Successfully!");
+        
       } catch (error) {
-        console.error('Error creating product:', error);
+        console.error("Error creating product:", error);
         toast.error("Error creating product. Please try again later.");
       }
     }
   };
+
+  useState(() => {
+    if (isEditProduct) {
+      setValue("name", selectedProduct.name);
+      setValue("description", selectedProduct.name);
+      setValue("mrp", selectedProduct.price?.mrp);
+      setValue("sellingPrice", selectedProduct.price?.sellingPrice);
+      setEditImageUrl(
+        `${import.meta.env.VITE_API_BASE_URL}image/${
+          selectedProduct?.images[0]
+        }`
+      );
+    }
+  }, []);
 
   return (
     <div className="w-full min-h-[calc(100vh-290px)] flex flex-col">
@@ -76,7 +104,11 @@ const EditProduct = () => {
             />
           </div>
           <div className="flex mt-[16px] md:mt-0">
-            <ImageUpload setImageFile={setImageFile} />
+            <ImageUpload
+              setImageFile={setImageFile}
+              editImageUrl={editImageUrl}
+              setEditImageUrl={setEditImageUrl}
+            />
           </div>
         </div>
         <input
