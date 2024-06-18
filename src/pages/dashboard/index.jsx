@@ -123,7 +123,7 @@ const Dashboard = () => {
           <Link
             to="/dashboard/edit-product"
             onClick={() => {
-              setIsEditProduct();
+              setIsEditProduct(true);
               setSelectedProduct(row.original);
             }}
           >

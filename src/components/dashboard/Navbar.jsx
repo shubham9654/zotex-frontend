@@ -1,18 +1,12 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-import Button from './ui/Button';
 import { svgAssets } from '../../assets/image';
 import { useDialog } from '../../stores/dialog.store';
 
 export const  Navbar = () => {
-	const navigate = useNavigate();
 	const { isOpen } = useDialog(
     (state) => state
   )
-
-	const handleAddProduct = () => {
-		navigate('/dashboard/edit-product');
-	}
 
 	return (
 		<div className={`w-full !py-5 flex items-center z-50  fixed ${isOpen ? 'bg-transparent' : 'bg-[#F6F8F9]'}`}>
@@ -24,7 +18,6 @@ export const  Navbar = () => {
 			<div className="pl-5 pr-2.5 ml-[300px] mr-5 flex grow items-center justify-between">
 				<h2 className="text-[22px] font-medium font-poppins">Product List</h2>
 				<div className="flex items-center">
-					<Button text="+ Add Product" handleClick={handleAddProduct} />
 					<img className="mx-2.5 cursor-pointer" alt="notification" src={svgAssets.navbar.notification} />
 					<Link to="/login" className="flex items-center">
 						<img className="mx-2.5 cursor-pointer" alt="user_img" src={svgAssets.navbar.defaultUser} />

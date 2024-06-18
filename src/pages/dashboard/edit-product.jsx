@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
@@ -15,7 +15,12 @@ const EditProduct = () => {
     reset,
     setValue,
   } = useForm();
-  const { isEditProduct, selectedProduct } = useProduct((state) => state);
+  const {
+    isEditProduct,
+    setIsEditProduct,
+    selectedProduct,
+    clearSelectedProduct,
+  } = useProduct((state) => state);
   const [imageFile, setImageFile] = useState();
   const [editImageUrl, setEditImageUrl] = useState();
 
@@ -34,7 +39,8 @@ const EditProduct = () => {
         if (isEditProduct) {
           formData.append("imageId", selectedProduct?.images[0]);
           const data = await axios.put(
-            `${import.meta.env.VITE_API_BASE_URL}product/${selectedProduct._id}`,
+            `${import.meta.env.VITE_API_BASE_URL}product/${selectedProduct._id
+            }`,
             formData
           );
           toast.success(data.data.message);
@@ -45,7 +51,6 @@ const EditProduct = () => {
           );
         }
         reset();
-        
       } catch (error) {
         console.error("Error creating product:", error);
         toast.error("Error creating product. Please try again later.");
@@ -53,19 +58,23 @@ const EditProduct = () => {
     }
   };
 
-  useState(() => {
+  useEffect(() => {
     if (isEditProduct) {
       setValue("name", selectedProduct.name);
       setValue("description", selectedProduct.name);
       setValue("mrp", selectedProduct.price?.mrp);
       setValue("sellingPrice", selectedProduct.price?.sellingPrice);
       setEditImageUrl(
-        `${import.meta.env.VITE_API_BASE_URL}image/${
-          selectedProduct?.images[0]
+        `${import.meta.env.VITE_API_BASE_URL}image/${selectedProduct?.images[0]
         }`
       );
     }
+    return () => {
+      clearSelectedProduct();
+      setIsEditProduct(false);
+    };
   }, []);
+
 
   return (
     <div className="w-full min-h-[calc(100vh-290px)] flex flex-col">

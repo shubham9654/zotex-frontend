@@ -6,15 +6,20 @@ export const useProduct = create((set) => ({
   totalCount: null,
   isLoading: false,
   isEditProduct: false,
-  setIsEditProduct: () => {
+  setIsEditProduct: (state) => {
     set(() => ({
-      isEditProduct: true
+      isEditProduct: state
     }))
   },
   selectedProduct: {},
   setSelectedProduct: (data) => {
     set(() => ({
       selectedProduct: data
+    }))
+  },
+  clearSelectedProduct: () => {
+    set(() => ({
+      selectedProduct: {}
     }))
   },
   getAllProducts: async ({ search = "", page }) => {
