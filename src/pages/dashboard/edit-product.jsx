@@ -15,18 +15,20 @@ const EditProduct = () => {
     reset,
     setValue,
   } = useForm();
+  
   const {
     isEditProduct,
     setIsEditProduct,
     selectedProduct,
     clearSelectedProduct,
   } = useProduct((state) => state);
-  const [imageFile, setImageFile] = useState();
-  const [editImageUrl, setEditImageUrl] = useState();
+
+  const [imageFile, setImageFile] = useState(null);
+  const [editImageUrl, setEditImageUrl] = useState("");
 
   const onSubmit = async ({ name, description, mrp, sellingPrice }) => {
     if (!imageFile && !isEditProduct) {
-      toast.warning("Please upload image!");
+      toast.warning("Please upload an image!");
     } else {
       const formData = new FormData();
       formData.append("name", name);
@@ -38,43 +40,42 @@ const EditProduct = () => {
       try {
         if (isEditProduct) {
           formData.append("imageId", selectedProduct?.images[0]);
-          const data = await axios.put(
-            `${import.meta.env.VITE_API_BASE_URL}product/${selectedProduct._id
-            }`,
+          const response = await axios.put(
+            `${import.meta.env.VITE_API_BASE_URL}product/${selectedProduct._id}`,
             formData
           );
-          toast.success(data.data.message);
+          toast.success(response.data.message);
         } else {
           await axios.post(
             `${import.meta.env.VITE_API_BASE_URL}product/`,
             formData
           );
+          toast.success("Product created successfully");
         }
         reset();
       } catch (error) {
-        console.error("Error creating product:", error);
-        toast.error("Error creating product. Please try again later.");
+        console.error("Error:", error);
+        toast.error("Error creating or updating product. Please try again later.");
       }
     }
   };
 
   useEffect(() => {
-    if (isEditProduct) {
+    if (isEditProduct && selectedProduct) {
       setValue("name", selectedProduct.name);
-      setValue("description", selectedProduct.name);
+      setValue("description", selectedProduct.description);
       setValue("mrp", selectedProduct.price?.mrp);
       setValue("sellingPrice", selectedProduct.price?.sellingPrice);
       setEditImageUrl(
-        `${import.meta.env.VITE_API_BASE_URL}image/${selectedProduct?.images[0]
-        }`
+        `${import.meta.env.VITE_API_BASE_URL}image/${selectedProduct.images[0]}`
       );
     }
+  
     return () => {
       clearSelectedProduct();
       setIsEditProduct(false);
     };
   }, []);
-
 
   return (
     <div className="w-full min-h-[calc(100vh-290px)] flex flex-col">
